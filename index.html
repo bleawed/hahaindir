@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama İndir</title>
+    <!-- Modern tasarım için Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center p-4">
+    
+    <div class="bg-slate-800 border border-slate-700 p-8 rounded-2xl shadow-2xl max-w-md w-full text-center">
+        <!-- İkon -->
+        <div class="w-16 h-16 bg-blue-600/20 text-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-blue-500/30">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+        </div>
+
+        <h1 class="text-2xl font-bold mb-2">Uygulamayı İndir</h1>
+        <p class="text-slate-400 text-sm mb-6">En son sürümü güvenle indirmek için aşağıdaki butona tıklayın.</p>
+
+        <!-- İndirme Butonu -->
+        <!-- 'program.exe' kısmını kendi exe dosyanın adı ile değiştirebilirsin -->
+        <a href="./program.exe" download="UygulamaKurulum.exe" 
+           class="w-full inline-block bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-6 rounded-xl transition duration-200 shadow-lg shadow-blue-600/30 text-center">
+            Hemen İndir (.exe)
+        </a>
+
+        <div class="mt-6 text-xs text-slate-500">
+            Vercel Altyapısı ile Güvenli Bağlantı
+        </div>
+    </div>
+
+</body>
+</html>
